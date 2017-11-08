@@ -1,0 +1,42 @@
+html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #2f4f4f;
+  color: #ebeeec;
+  font-family: sans-serif; }
+
+.global-main {
+  display: table;
+  width: 100%;
+  min-height: calc(100% - 62px); }
+  .global-main .centering-support {
+    display: table-row;
+    width: 0; }
+  .global-main .messages {
+    display: table-row;
+    width: 100%;
+    font-size: 14px;
+    text-align: center; }
+    .global-main .messages img {
+      width: 50%;
+      min-width: 240px;
+      max-width: 640px; }
+    .global-main .messages p {
+      margin: 30px 0; }
+
+.global-footer {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px 36px;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  box-sizing: border-box; }
+  .global-footer .copyright {
+    font-weight: bold; }
