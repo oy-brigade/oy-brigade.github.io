@@ -26,8 +26,9 @@
           if (btoa(shaObj.getHash('HEX')) != hash) {
             location.reload()
           } else {
-            var enc = 'U2FsdGVkX1/EmHOBoJ6ZzJ3joO4jnKarAI/XnsvkNEZ8gsgJ/JFKdjNBpz0YK6ONErZD1xOka74h2Cx9E+JVlmbjmjaRFYk8WJsKGfeOB04='
-            location.href = CryptoJS.AES.decrypt(enc, password).toString(CryptoJS.enc.Utf8)
+            var enc = 'U2FsdGVkX18fqQv0FvbuCr6ovaQ6W6rPycc2Xt/OacurIflkCZ6bUUrDvXw58ymBFKNGwedCckbGlhZHz+o8vpfJ7ghx4RBgU/VRq6ntQZtV6x/cCtwulNSMX8oFkM3g'
+            var path = CryptoJS.AES.decrypt(enc, password).toString(CryptoJS.enc.Utf8)
+            location.href = path
           }
         })
       })
